@@ -11,31 +11,32 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="64dp"
         android:text="Responder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editar" />
 
     <TextView
         android:id="@+id/muestra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
         android:fontFamily="sans-serif-black"
         android:text="0"
         android:textColor="#9EA4A8"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="268dp" />
 
     <EditText
         android:id="@+id/editar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="64dp"
         android:ems="10"
         android:hint="Respuesta"
@@ -43,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintTop_toBottomOf="@+id/muestra" />
 
     <TextView
         android:id="@+id/textpunt"
@@ -90,19 +91,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="#5DD1B6"
         android:text="Intentar de nuevo"
+        app:layout_constraintBottom_toTopOf="@+id/textpunt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="479dp" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonResponder"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="293dp"
         android:layout_height="192dp"
         android:layout_marginTop="80dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/muestra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
